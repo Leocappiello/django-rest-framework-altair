@@ -16,7 +16,7 @@ class Cuenta(models.Model):
     registerDate = models.DateTimeField(auto_now_add=True)
     
     def completeName(self):
-        txt = "{0},{1},{2}"
+        txt = "{0},{1}"
         return txt.format(self.userName, self.userSurname)
     
     
