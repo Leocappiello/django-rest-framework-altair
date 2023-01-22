@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+  <form method="POST" action="/home/">
+    {% csrf_token %}
+    <div class="container-sm">
+      <h1>Crea tu evento</h1>
+      {{ event.as_p }}
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
+
+{% endblock %}
