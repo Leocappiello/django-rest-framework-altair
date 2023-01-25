@@ -22,5 +22,6 @@ urlpatterns = [
     path("home/", views.index),
     path("signin/", views.signin),
     path("login/", views.login),
+    path("event-manage/", views.eventManage),
     
 ]

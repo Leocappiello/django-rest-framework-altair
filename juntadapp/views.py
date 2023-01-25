@@ -22,3 +22,6 @@ def login(request):
 
 def signin(request):
     return render(request, "user_sesion/signin.html")
+
+def eventManage(request):
+    return render(request, "event_manage.html")
