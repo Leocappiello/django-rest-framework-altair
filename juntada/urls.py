@@ -23,5 +23,6 @@ urlpatterns = [
     path("signin/", views.signin),
     path("login/", views.login),
     path("event-manage/", views.eventManage),
+    path("costs/", views.costs),
     
 ]

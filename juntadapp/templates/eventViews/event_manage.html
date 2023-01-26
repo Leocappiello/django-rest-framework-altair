@@ -1,0 +1,54 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<div class="container text-alignment-left">
+    <div class="row align-items-start">
+        <div class="col-md">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                  <label class="form-label">Nombre de evento</label>
+                  <input type="text" class="form-control" id="eventNameLabel" disabled >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Fecha del evento</label>
+                    <input type="date" class="form-control" id="eventDate">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Hora de inicio</label>
+                    <input type="time" class="form-control" id="eventStart">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Comentarios sobre el evento</label>
+                    <input type="text" class="form-control" id="eventDetails">
+                </div>
+                <div class="justify-content-start d-flex">
+                    <button type="submit" class="btn btn-primary rounded-0">Guardar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <div>
+                <label class="form-label">Lista de participantes</label>
+                <div class="list-group">
+                    <!-- Aca se hace con un metodo for y que carge el rol que tiene y se va a cargar con un color diferente-->
+                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                  
+                  
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">This is a primary list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">This is a secondary list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">This is a info list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">This is a light list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">This is a dark list group item</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

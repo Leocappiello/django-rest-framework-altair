@@ -24,4 +24,7 @@ def signin(request):
     return render(request, "user_sesion/signin.html")
 
 def eventManage(request):
-    return render(request, "event_manage.html")
+    return render(request, "eventViews/event_manage.html")
+
+def costs(request):
+    return render(request, "eventViews/costs.html")
